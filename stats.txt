@@ -1,0 +1,323 @@
+=================================================
+| TOTAL                                         |
+=================================================
+
+Positive cases:         7886
+Negative cases:         7886
+
+True Positive:          7693
+False Positive:          408
+False Negative:          193
+True Negative:          7478
+
+TPR:                  97.55%
+TNR:                  94.83%
+ACC:                  96.19%
+
+Sanitizers verification
+
+True Positive:          7599
+False Positive:          408
+False Negative:          287
+True Negative:          7478
+
+TPR:                  96.36%
+TNR:                  94.83%
+ACC:                  95.59%
+
+=================================================
+| CWE121: Stack Based Buffer Overflow           |
+=================================================
+
+Positive cases:          188
+Negative cases:          188
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE122: Heap Based Buffer Overflow            |
+=================================================
+
+Positive cases:          376
+Negative cases:          376
+
+True Positive:           376
+False Positive:            0
+False Negative:            0
+True Negative:           376
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           376
+False Positive:            0
+False Negative:            0
+True Negative:           376
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE124: Buffer Underwrite                     |
+=================================================
+
+Positive cases:          188
+Negative cases:          188
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE126: Buffer Overread                       |
+=================================================
+
+Positive cases:          188
+Negative cases:          188
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE127: Buffer Underread                      |
+=================================================
+
+Positive cases:          188
+Negative cases:          188
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE190: Integer Overflow                      |
+=================================================
+
+Positive cases:         2580
+Negative cases:         2580
+
+True Positive:          2578
+False Positive:          235
+False Negative:            2
+True Negative:          2345
+
+TPR:                  99.92%
+TNR:                  90.89%
+ACC:                  95.41%
+
+Sanitizers verification
+
+True Positive:          2531
+False Positive:          235
+False Negative:           49
+True Negative:          2345
+
+TPR:                  98.10%
+TNR:                  90.89%
+ACC:                  94.50%
+
+=================================================
+| CWE191: Integer Underflow                     |
+=================================================
+
+Positive cases:         1922
+Negative cases:         1922
+
+True Positive:          1920
+False Positive:          173
+False Negative:            2
+True Negative:          1749
+
+TPR:                  99.90%
+TNR:                  91.00%
+ACC:                  95.45%
+
+Sanitizers verification
+
+True Positive:          1873
+False Positive:          173
+False Negative:           49
+True Negative:          1749
+
+TPR:                  97.45%
+TNR:                  91.00%
+ACC:                  94.22%
+
+=================================================
+| CWE194: Unexpected Sign Extension             |
+=================================================
+
+Positive cases:          752
+Negative cases:          752
+
+True Positive:           752
+False Positive:            0
+False Negative:            0
+True Negative:           752
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           752
+False Positive:            0
+False Negative:            0
+True Negative:           752
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+=================================================
+| CWE195: Signed to Unsigned Conversation Error |
+=================================================
+
+Positive cases:          752
+Negative cases:          752
+
+True Positive:           751
+False Positive:            0
+False Negative:            1
+True Negative:           752
+
+TPR:                  99.87%
+TNR:                 100.00%
+ACC:                  99.93%
+
+Sanitizers verification
+
+True Positive:           751
+False Positive:            0
+False Negative:            1
+True Negative:           752
+
+TPR:                  99.87%
+TNR:                 100.00%
+ACC:                  99.93%
+
+=================================================
+| CWE369: Divide by Zero                        |
+=================================================
+
+Positive cases:          564
+Negative cases:          564
+
+True Positive:           376
+False Positive:            0
+False Negative:          188
+True Negative:           564
+
+TPR:                  66.67%
+TNR:                 100.00%
+ACC:                  83.33%
+
+Sanitizers verification
+
+True Positive:           376
+False Positive:            0
+False Negative:          188
+True Negative:           564
+
+TPR:                  66.67%
+TNR:                 100.00%
+ACC:                  83.33%
+
+=================================================
+| CWE680: Integer Overflow to Buffer Overflow   |
+=================================================
+
+Positive cases:          188
+Negative cases:          188
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%
+
+Sanitizers verification
+
+True Positive:           188
+False Positive:            0
+False Negative:            0
+True Negative:           188
+
+TPR:                 100.00%
+TNR:                 100.00%
+ACC:                 100.00%

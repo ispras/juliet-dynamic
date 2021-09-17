@@ -1,0 +1,8 @@
+bin
+*.o
+sydr
+results
+sort_make.py
+*.aux
+*.log
+*.swp
