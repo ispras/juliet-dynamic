@@ -3,8 +3,9 @@
 This repository contains [Juliet](https://samate.nist.gov/SRD/testsuite.php)
 C/C++ test suite for dynamic tools. You can measure True Positive and True
 Negative rates for your dynamic tool. This repository was used to measure
-results for the upcoming [Sydr](https://arxiv.org/abs/2011.09269) security
-predicates paper. However, feel free to support your own tool.
+results for "Symbolic Security Predicates: Hunt Program Weaknesses"
+[paper](https://arxiv.org/abs/2111.05770). However, feel free to support your
+own tool.
 
 ## Dependencies
 
@@ -118,3 +119,17 @@ return list of new generated inputs by your tool. Then just run:
 We evaluated Sydr security predicates on Juliet test suite. See results below:
 
 ![Sydr Juliet results](stats.svg)
+
+## Cite Us
+
+```
+@article{vishnyakov21,
+  title = {Symbolic Security Predicates: Hunt Program Weaknesses},
+  author = {Vishnyakov, Alexey and Logunova, Vlada and Kobrin, Eli and Kuts,
+            Daniil and Parygina, Darya and Fedotov, Andrey},
+  booktitle = {2021 Ivannikov ISPRAS Open Conference (ISPRAS)},
+  year = {2021},
+  publisher = {IEEE},
+  url = {https://arxiv.org/abs/2111.05770},
+}
+```
