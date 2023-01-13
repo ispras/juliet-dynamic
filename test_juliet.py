@@ -51,7 +51,7 @@ full_names = {
         "CWE190" : "Integer Overflow",
         "CWE191" : "Integer Underflow",
         "CWE194" : "Unexpected Sign Extension",
-        "CWE195" : "Signed to Unsigned Conversation Error",
+        "CWE195" : "Signed to Unsigned Conversion Error",
         "CWE369" : "Divide by Zero",
         "CWE680" : "Integer Overflow to Buffer Overflow"
 }

@@ -242,7 +242,7 @@ TNR:                 100.00%
 ACC:                 100.00%
 
 =================================================
-| CWE195: Signed to Unsigned Conversation Error |
+| CWE195: Signed to Unsigned Conversion Error   |
 =================================================
 
 Positive cases:          752
