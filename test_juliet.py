@@ -39,8 +39,9 @@ class CWE(Enum):
     CWE191 = 7
     CWE194 = 8
     CWE195 = 9
-    CWE369 = 10
-    CWE680 = 11
+    CWE197 = 10
+    CWE369 = 11
+    CWE680 = 12
 
 full_names = {
         "CWE121" : "Stack Based Buffer Overflow",
@@ -52,6 +53,7 @@ full_names = {
         "CWE191" : "Integer Underflow",
         "CWE194" : "Unexpected Sign Extension",
         "CWE195" : "Signed to Unsigned Conversion Error",
+        "CWE197" : "Numeric Truncation Error",
         "CWE369" : "Divide by Zero",
         "CWE680" : "Integer Overflow to Buffer Overflow"
 }
@@ -68,6 +70,8 @@ def ACC(tp, tn, fp, fn):
 def get_input(bin):
     if 'CWE194' in bin:
         return 'inputs/short_input'
+    elif 'CWE197' in bin:
+        return 'inputs/int_input'
     elif 'Underflow' in bin and 'unsigned' not in bin:
         if 'int64_t' in bin:
             return 'inputs/sign_int64_t_input'
@@ -147,6 +151,7 @@ def run_sydr(path, cwe, input):
             "CWE191" : "intoverflow-func",
             "CWE194" : "bounds",
             "CWE195" : "bounds",
+            "CWE197" : "trunc",
             "CWE369" : "zerodiv",
             "CWE680" : "intoverflow-func"
     }
