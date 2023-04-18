@@ -277,8 +277,10 @@ def collect_results():
                 'TP' : 0,
                 'FN' : 0
             }
+            has_stats = False
             for key in stats:
                 if CWE(i).name == 'ALL' or CWE(i).name in key:
+                    has_stats = True
                     if key.endswith('bad'):
                         pos += 1
                     else:
@@ -287,7 +289,8 @@ def collect_results():
                     if stats[key]['class'] == 'TP' or stats[key]['class'] == 'FN':
                         res_san[stats[key]['san_check']] += 1
 
-            print_results(CWE(i).name, pos, neg, res, res_san)
+            if has_stats:
+                print_results(CWE(i).name, pos, neg, res, res_san)
         else:
             if CWE(i).name == 'ALL':
                 continue
