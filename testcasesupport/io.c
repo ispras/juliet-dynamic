@@ -113,7 +113,8 @@ size_t decodeHexChars(unsigned char * bytes, size_t numBytes, const char * hex)
     while (numWritten < numBytes && isxdigit(hex[2 * numWritten]) && isxdigit(hex[2 * numWritten + 1]))
     {
         int byte;
-        sscanf(&hex[2 * numWritten], "%02x", &byte);
+        int res = sscanf(&hex[2 * numWritten], "%02x", &byte);
+        assert(res > 0); // Make sure the return value isn't 0 or EOF
         bytes[numWritten] = (unsigned char) byte;
         ++numWritten;
     }
@@ -135,7 +136,8 @@ size_t decodeHexChars(unsigned char * bytes, size_t numBytes, const char * hex)
     while (numWritten < numBytes && iswxdigit(hex[2 * numWritten]) && iswxdigit(hex[2 * numWritten + 1]))
     {
         int byte;
-        swscanf(&hex[2 * numWritten], L"%02x", &byte);
+        int res = swscanf(&hex[2 * numWritten], L"%02x", &byte);
+        assert(res > 0); // Make sure the return value isn't 0 or EOF
         bytes[numWritten] = (unsigned char) byte;
         ++numWritten;
     }
